@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  /* You can override or extend theme variables here if you want */
+}
+
+@layer base {
+  body {
+    @apply text-gray-800 bg-white;
+  }
+}
