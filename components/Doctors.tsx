@@ -6,12 +6,12 @@ import React from "react";
 
 const doctors = [
   {
-    name: "Dr. VOLODCHENKO Galina",
+    name: "Dr. Volodchenko Galina",
     title: "Huisarts",
     image: "/doctor1.webp",
   },
   {
-    name: "Dr. AMIN Adnan",
+    name: "Dr. Amin Adnan",
     title: "Huisarts",
     image: "/doctor2.webp",
   },

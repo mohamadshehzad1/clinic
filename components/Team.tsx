@@ -75,7 +75,7 @@ const Teams = () => {
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
-            Dr. AMIN Adnan
+            Dr. Amin Adnan
           </h2>
 
           <ul className="space-y-3 mb-8">
