@@ -5,12 +5,10 @@ import Image from "next/image";
 const AppointmentPage = () => {
   return (
     <div className="w-full min-h-screen bg-white">
-
       <section className="relative w-full h-[70vh] flex flex-col justify-center items-center text-center text-white overflow-hidden">
-
         <div className="absolute inset-0">
           <Image
-            src="/afspraak.avif" 
+            src="/afspraak.avif"
             alt="Clinic Entrance"
             fill
             priority
@@ -20,18 +18,17 @@ const AppointmentPage = () => {
           <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
         </div>
 
-
         <div className="relative z-10 px-4">
-          <button className="bg-red-600 hover:bg-red-700 text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
+          <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
             Maak online een afspraak
           </button>
 
           <p className="mt-4 text-sm md:text-base text-gray-100 tracking-wide">
             OF BEL ONS
           </p>
-
-          <p className="text-2xl md:text-3xl font-bold text-red-400 mt-1">
-            016 89 90 90
+          <p className="text-2xl md:text-3xl font-bold text-white-400 mt-1">
+            {" "}
+            059455555{" "}
           </p>
         </div>
       </section>
@@ -45,7 +42,7 @@ const AppointmentPage = () => {
           <ul className="list-disc list-inside space-y-2">
             <li>
               Gelieve deze afspraak in te boeken via ons online agenda-systeem
-              of telefonisch op het nummer 016 89 90 90 (bij voorkeur in de
+              of telefonisch op het nummer 059455555 (bij voorkeur in de
               voormiddag).
             </li>
             <li>

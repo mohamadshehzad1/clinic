@@ -12,7 +12,7 @@ const News = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
           Nieuws
         </h2>
-        <div className="w-24 h-[2px] bg-red-600 mx-auto"></div>
+        <div className="w-24 h-[2px] bg-[#2AAA8A] mx-auto"></div>
       </div>
 
       {/* News Card */}
@@ -33,16 +33,17 @@ const News = () => {
             Najaarsvaccinaties
           </h3>
           <p className="text-sm text-gray-600 mb-4">
-            <span className="font-semibold">22 September 2025</span> · Geen Reacties
+            <span className="font-semibold">22 September 2025</span> · Geen
+            Reacties
           </p>
           <p className="text-base text-gray-700 leading-relaxed mb-6 line-clamp-3">
-            *** ENGLISH BELOW *** Beste patiënten, binnenkort start onze praktijk met de
-            najaarsvaccinaties voor COVID, Griep en RSV…
+            *** ENGLISH BELOW *** Beste patiënten, binnenkort start onze
+            praktijk met de najaarsvaccinaties voor COVID, Griep en RSV…
           </p>
 
           <Link
             href="/bericht"
-            className="inline-block bg-red-700 hover:bg-red-800 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 shadow-md"
+            className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 shadow-md"
           >
             Lees meer
           </Link>

@@ -25,12 +25,13 @@ const Doctors = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Artsen
         </h2>
-        <div className="w-20 h-1 bg-red-600 mx-auto mb-6" />
+        <div className="w-20 h-1 bg-[#2AAA8A] mx-auto mb-6" />
 
         {/* Section Description */}
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
           Ons toegewijd team van artsen is geconventioneerd en geaccrediteerd,
-          zodat u altijd kunt rekenen op kwaliteitsvolle zorg aan de officiële tarieven.
+          zodat u altijd kunt rekenen op kwaliteitsvolle zorg aan de officiële
+          tarieven.
         </p>
 
         {/* Doctor Cards */}
@@ -63,7 +64,7 @@ const Doctors = () => {
         <div className="mt-10">
           <Link
             href="/team"
-            className="bg-red-600 text-white px-6 py-3 rounded-full font-medium hover:bg-red-700 transition-all inline-block"
+            className="bg-[#2AAA8A] text-white px-6 py-3 rounded-full font-medium hover:bg-[#238f74] transition-all inline-block"
           >
             Meer info
           </Link>

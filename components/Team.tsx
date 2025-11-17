@@ -38,7 +38,10 @@ const Teams = () => {
               "Spreekt Nederlands, Engels en Russisch vloeiend.",
             ].map((item, index) => (
               <li key={index} className="flex items-start">
-                <ChevronRight className="text-red-600 mt-1 flex-shrink-0" size={18} />
+                <ChevronRight
+                  className="text-[#2AAA8A] mt-1 flex-shrink-0"
+                  size={18}
+                />
                 <span className="ml-2">{item}</span>
               </li>
             ))}
@@ -46,7 +49,7 @@ const Teams = () => {
 
           <Link
             href="/team"
-            className="inline-block bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
+            className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
           >
             Meer info
           </Link>
@@ -84,7 +87,10 @@ const Teams = () => {
               "Actief betrokken bij nascholingen en medische onderzoekstrajecten.",
             ].map((item, index) => (
               <li key={index} className="flex items-start">
-                <ChevronRight className="text-red-600 mt-1 flex-shrink-0" size={18} />
+                <ChevronRight
+                  className="text-[#2AAA8A] mt-1 flex-shrink-0"
+                  size={18}
+                />
                 <span className="ml-2">{item}</span>
               </li>
             ))}
@@ -92,7 +98,7 @@ const Teams = () => {
 
           <Link
             href="/team"
-            className="inline-block bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
+            className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
           >
             Meer info
           </Link>
