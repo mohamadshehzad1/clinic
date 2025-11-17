@@ -37,34 +37,43 @@ const ContactPage = () => {
 
           {/* Phone */}
           <div>
-            <div className="flex items-center gap-2 text-[#2AAA8A] mb-1">
-              <Phone className="w-5 h-5 text-[#2AAA8A]" />
-              <h3 className="uppercase text-sm font-semibold tracking-wide text-[#2AAA8A]">
-                Telefoon
-              </h3>
-            </div>
-            <p className="text-gray-800">059455555</p>
-            <hr className="border-t border-[#2AAA8A] mt-3" />
+          <div className="flex items-center gap-2 text-[#2AAA8A] mb-1">
+          <Phone className="w-5 h-5 text-[#2AAA8A]" />
+          <h3 className="uppercase text-sm font-semibold tracking-wide text-[#2AAA8A]">
+           Telefoon
+          </h3>
           </div>
 
-          {/* Email */}
-          <div>
-            <div className="flex items-center gap-2 text-[#2AAA8A] mb-1">
-              <Mail className="w-5 h-5 text-[#2AAA8A]" />
-              <h3 className="uppercase text-sm font-semibold tracking-wide text-[#2AAA8A]">
-                Email
-              </h3>
-            </div>
+          {/* Clickable phone number */}
+          <a
+          href="tel:059455555"
+          className="text-gray-800 hover:text-[#2AAA8A] transition"
+          >
+          059455555
+          </a>
+         <hr className="border-t border-[#2AAA8A] mt-3" />
+         </div>
 
-            <a
-              href=" info@praktijkgroenendijk.be"
-              className="text-gray-800 hover:underline"
-            >
-              info@praktijkgroenendijk.be
-            </a>
-            <hr className="border-t border-red-200 mt-3" />
-          </div>
+
+        {/* Email */}
+        <div>
+        <div className="flex items-center gap-2 text-[#2AAA8A] mb-1">
+        <Mail className="w-5 h-5 text-[#2AAA8A]" />
+        <h3 className="uppercase text-sm font-semibold tracking-wide text-[#2AAA8A]">
+         Email
+        </h3>
         </div>
+
+        <a
+        href="mailto:info@praktijkgroenendijk.be"
+        className="text-gray-800 hover:underline"
+        >
+        info@praktijkgroenendijk.be
+        </a>
+
+       <hr className="border-t border-red-200 mt-3" />
+       </div>
+       </div>
 
         {/* Right Column: Google Map */}
         <div className="w-full h-[350px] md:h-[400px] rounded-lg overflow-hidden shadow-md">

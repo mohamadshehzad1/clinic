@@ -16,7 +16,7 @@ export default function WachtpostPage() {
 
       {/* Card Section */}
       <div className="w-full max-w-3xl bg-white rounded-2xl shadow-lg p-8 md:p-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-red-700 mb-4">
+      <h2 className="text-2xl md:text-3xl font-bold text-[#2aaa8a] mb-4">
           Najaarsvaccinaties
         </h2>
 
