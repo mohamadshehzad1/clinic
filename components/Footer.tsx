@@ -100,7 +100,7 @@ const Footer = () => {
             </a>
           </p>
           <Link href="#" className="hover:underline text-[#2AAA8A]">
-            Privacy Policy
+            
           </Link>
         </div>
       </div>
