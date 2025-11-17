@@ -29,7 +29,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl font-medium text-gray-100 mb-8">
-          Dr. VOLODCHENKO Galina – Dr. AMIN Adnan
+          Dr. Volodchenko Galina – Dr. AMIN Adnan
         </p>
 
         <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white text-base md:text-lg font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300">
