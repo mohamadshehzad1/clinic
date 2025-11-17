@@ -30,7 +30,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl font-medium text-gray-100 mb-8">
-          Dr. Volodchenko Galina – Dr. AMIN Adnan
+          Dr. Volodchenko Galina – Dr. Amin Adnan
         </p>
 
         <Link href="/contact">
