@@ -26,7 +26,7 @@ const Teams = () => {
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
-            Dr. VOLODCHENKO Galina
+            Dr. Volodchenko Galina
           </h2>
 
           <ul className="space-y-3 mb-8">
@@ -48,7 +48,7 @@ const Teams = () => {
           </ul>
 
           <Link
-            href="/team"
+            href="/contact"
             className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
           >
             Meer info
@@ -97,7 +97,7 @@ const Teams = () => {
           </ul>
 
           <Link
-            href="/team"
+            href="/contact"
             className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
           >
             Meer info

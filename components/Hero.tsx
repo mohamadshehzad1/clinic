@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -32,9 +33,11 @@ const Hero = () => {
           Dr. Volodchenko Galina – Dr. AMIN Adnan
         </p>
 
-        <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white text-base md:text-lg font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300">
-          Maak een afspraak
-        </button>
+        <Link href="/contact">
+          <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white text-base md:text-lg font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300">
+            Maak een afspraak
+          </button>
+        </Link>
       </div>
     </section>
   );
