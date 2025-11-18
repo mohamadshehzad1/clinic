@@ -49,7 +49,7 @@ const ContactPage = () => {
           href="tel:059455555"
           className="text-gray-800 hover:text-[#2AAA8A] transition"
           >
-          059455555
+          059 45 55 55
           </a>
          <hr className="border-t border-[#2AAA8A] mt-3" />
          </div>
