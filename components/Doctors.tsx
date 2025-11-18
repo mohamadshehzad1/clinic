@@ -9,11 +9,13 @@ const doctors = [
     name: "Dr. Volodchenko Galina",
     title: "Huisarts",
     image: "/doctor1.webp",
+    appointmentUrl: "https://your-appointment-url.com",
   },
   {
     name: "Dr. Amin Adnan",
     title: "Huisarts",
     image: "/doctor2.webp",
+    appointmentUrl: "https://your-appointment-url.com",
   },
 ];
 
@@ -30,15 +32,14 @@ const Doctors = () => {
         {/* Section Description */}
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
           Ons toegewijd team van artsen is geconventioneerd en geaccrediteerd,
-          zodat u altijd kunt rekenen op kwaliteitsvolle zorg aan de officiële
-          tarieven.
+          zodat u altijd kunt rekenen op kwaliteitsvolle zorg aan de officiële tarieven.
         </p>
 
         {/* Doctor Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-items-center">
-          {doctors.map((doctor, index) => (
+          {doctors.map((doctor) => (
             <div
-              key={index}
+              key={doctor.name}
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden w-full max-w-sm"
             >
               <div className="relative h-80 w-full">
@@ -54,21 +55,23 @@ const Doctors = () => {
                 <h3 className="text-xl font-semibold text-gray-800 mb-1">
                   {doctor.name}
                 </h3>
-                <p className="text-gray-600 text-sm">{doctor.title}</p>
+                <p className="text-gray-600 text-sm mb-4">{doctor.title}</p>
+
+                {/* Appointment Button */}
+                <Link
+                  href={doctor.appointmentUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#2AAA8A] text-white px-5 py-2 rounded-full font-medium hover:bg-[#238f74] transition-all inline-block"
+                >
+                  Afspraak maken
+                </Link>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Button Redirect */}
-        <div className="mt-10">
-          <Link
-            href="/team"
-            className="bg-[#2AAA8A] text-white px-6 py-3 rounded-full font-medium hover:bg-[#238f74] transition-all inline-block"
-          >
-            Meer info
-          </Link>
-        </div>
+        {/* "Meer info" button removed */}
       </div>
     </section>
   );

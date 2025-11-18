@@ -33,7 +33,7 @@ const Hero = () => {
           Dr. Volodchenko Galina – Dr. Amin Adnan
         </p>
 
-        <Link href="/contact">
+        <Link href="/team">
           <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white text-base md:text-lg font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300">
             Maak een afspraak
           </button>

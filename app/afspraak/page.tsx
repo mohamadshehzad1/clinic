@@ -28,7 +28,7 @@ const AppointmentPage = () => {
           </p>
           <p className="text-2xl md:text-3xl font-bold text-white-400 mt-1">
             {" "}
-            059455555{" "}
+            059 45 55 55{" "}
           </p>
         </div>
       </section>

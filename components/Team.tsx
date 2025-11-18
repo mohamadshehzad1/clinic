@@ -7,13 +7,15 @@ import { ChevronRight } from "lucide-react";
 const Teams = () => {
   return (
     <section className="bg-gray-50 py-16 px-6 md:px-12 lg:px-20 space-y-20">
+
       {/* ================= Doctor 1 ================= */}
       <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl mx-auto">
+
         {/* Left - Image */}
         <div className="relative w-full md:w-1/2 h-80 md:h-[420px] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/doctor2.webp"
-            alt="Dr. VOLODCHENKO Galina"
+            alt="Dr. Volodchenko Galina"
             fill
             className="object-cover"
           />
@@ -35,34 +37,35 @@ const Teams = () => {
               "Heeft bijzondere interesse in preventieve geneeskunde en chronische aandoeningen.",
               "Richt zich op een holistische aanpak van patiëntenzorg.",
               "Voert kleine heelkundige ingrepen uit in de praktijk.",
-              "Spreekt Nederlands, Engels en Russisch vloeiend.",
+              "Spreekt Nederlands, Engels en Russisch vloeiend."
             ].map((item, index) => (
               <li key={index} className="flex items-start">
-                <ChevronRight
-                  className="text-[#2AAA8A] mt-1 flex-shrink-0"
-                  size={18}
-                />
+                <ChevronRight className="text-[#2AAA8A] mt-1 flex-shrink-0" size={18} />
                 <span className="ml-2">{item}</span>
               </li>
             ))}
           </ul>
 
+          {/* Appointment Button */}
           <Link
-            href="/contact"
+            href="https://your-appointment-url.com"   // <--- Replace with your actual booking URL
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
           >
-            Meer info
+            Afspraak maken
           </Link>
         </div>
       </div>
 
       {/* ================= Doctor 2 ================= */}
       <div className="flex flex-col md:flex-row-reverse items-center gap-10 max-w-6xl mx-auto">
+
         {/* Right - Image */}
         <div className="relative w-full md:w-1/2 h-80 md:h-[420px] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/doctor1.webp"
-            alt="Dr. AMIN Adnan"
+            alt="Dr. Amin Adnan"
             fill
             className="object-cover"
           />
@@ -84,26 +87,27 @@ const Teams = () => {
               "Bijzondere aandacht voor patiëntgerichte zorg en langdurige begeleiding.",
               "Voert ECG’s en longfunctietesten uit binnen de praktijk.",
               "Spreekt Nederlands, Engels en Frans.",
-              "Actief betrokken bij nascholingen en medische onderzoekstrajecten.",
+              "Actief betrokken bij nascholingen en medische onderzoekstrajecten."
             ].map((item, index) => (
               <li key={index} className="flex items-start">
-                <ChevronRight
-                  className="text-[#2AAA8A] mt-1 flex-shrink-0"
-                  size={18}
-                />
+                <ChevronRight className="text-[#2AAA8A] mt-1 flex-shrink-0" size={18} />
                 <span className="ml-2">{item}</span>
               </li>
             ))}
           </ul>
 
+          {/* Appointment Button */}
           <Link
-            href="/contact"
+            href="https://your-appointment-url.com"   // <--- Replace with your actual booking URL
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
           >
-            Meer info
+            Afspraak maken
           </Link>
         </div>
       </div>
+
     </section>
   );
 };

@@ -4,6 +4,7 @@ import React from "react";
 import Hero from "@/components/Hero";
 import News from "@/components/News";
 import Doctors from "@/components/Doctors";
+import Popup from "@/components/Popup";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Hero />
       <News />
       <Doctors />
+      <Popup />
     </div>
   );
 };
