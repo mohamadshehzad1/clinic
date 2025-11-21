@@ -28,8 +28,8 @@ export default function NavBar() {
             <div className="md:hidden flex-1 flex justify-center">
               <Link href="/">
                 <Image
-                  src="/Logo-icon.png"
-                  alt="Tempelhof"
+                  src="/praktijk-groenendijk-logo.png"
+                  alt="praktijk-groenendijk-logo"
                   width={100}
                   height={45}
                   className="object-contain"
@@ -42,9 +42,9 @@ export default function NavBar() {
             <div className="hidden md:flex items-center">
               <Link href="/">
                 <Image
-                  src="/Logo-icon.png"
-                  alt="Tempelhof"
-                  width={120}
+                  src="/praktijk-groenendijk-logo.png"
+                  alt="praktijk-groenendijk-logo"
+                  width={100}
                   height={55}
                   className="object-contain"
                   priority

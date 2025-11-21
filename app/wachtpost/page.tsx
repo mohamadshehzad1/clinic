@@ -4,84 +4,67 @@ import Image from "next/image";
 import { Check } from "lucide-react";
 
 const WachtpostPage = () => {
+  const address = "Konterdamkaai, 8400 Oostende";
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    address
+  )}`;
+  const website = "https://www.hawapvzw.be";
+
+  const bullets = [
+    { label: "Tel. nummer", value: "1733", href: "tel:1733" },
+    { label: "Weekdagen", value: "19u - 8u" },
+    { label: "Feestdagen & Weekends", value: "Vrijdagavond 19u doorlopend tot maandag 8u" },
+    { label: "Adres", value: address, href: googleMapsUrl },
+    { label: "Website", value: "www.hawapvzw.be", href: website },
+  ];
+
+  // Split bullets into 2 columns for desktop
+  const mid = Math.ceil(bullets.length / 2);
+  const column1 = bullets.slice(0, mid);
+  const column2 = bullets.slice(mid);
+
   return (
-    <div className="min-h-screen bg-white py-12 px-6 md:px-16">
-      {/* 🔹 Title Section */}
-      <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#2AAA8A] mb-3">
-          Wachtpost regeling 1733
-        </h1>
+    <div className="min-h-screen bg-white flex flex-col justify-center items-center px-6">
+      <div className="max-w-[800px] w-full flex flex-col items-center">
+        {/* Two-column grid for bullets */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 w-full">
+          {[column1, column2].map((column, colIdx) => (
+            <div key={colIdx} className="flex flex-col gap-4">
+              {column.map((item) => (
+                <div key={item.label} className="grid grid-cols-[auto_1fr] items-start gap-3">
+                  {/* Tick */}
+                  <Check className="text-[#2AAA8A] w-6 h-6 mt-1" />
 
-        <p className="text-gray-600">
-          Bel 1733 voor medische hulp buiten de openingsuren van uw huisarts.
-        </p>
-      </div>
-
-      {/* 🔹 Main Content Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center max-w-6xl mx-auto">
-        {/* Left Column */}
-        <div className="space-y-8 text-center md:text-left">
-          <div>
-            <div className="flex items-center justify-center md:justify-start gap-2 text-[#2AAA8A] mb-2">
-              <Check className="w-5 h-5" />
-              <h3 className="text-lg font-semibold text-gray-900">Weekdagen</h3>
+                  {/* Text */}
+                  <div>
+                    <h3 className="font-semibold text-gray-900">{item.label}</h3>
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        className="text-[#2AAA8A] hover:underline transition"
+                      >
+                        {item.value}
+                      </a>
+                    ) : (
+                      <p className="text-gray-700">{item.value}</p>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
-            <p className="text-gray-700">
-              Tijdens de weekdagen is de wachtpost open vanaf{" "}
-              <strong>19u tot 7u</strong>.
-            </p>
-          </div>
-
-          <div>
-            <div className="flex items-center justify-center md:justify-start gap-2 text-[#2AAA8A] mb-2">
-              <Check className="w-5 h-5" />
-              <h3 className="text-lg font-semibold text-gray-900">
-                Weekend en feestdagen
-              </h3>
-            </div>
-            <p className="text-gray-700">
-              Tijdens het weekend en feestdagen is de wachtpost open van{" "}
-              <strong>Vrijdag 19u tot maandag 7u</strong> doorlopend.
-            </p>
-          </div>
+          ))}
         </div>
 
-        {/* Center Image */}
-        <div className="flex justify-center">
+        {/* Image below bullets */}
+        <div className="w-full flex justify-center mt-12">
           <Image
-            src="/emergency.jpg"
-            alt="Emergency Entrance"
-            width={400}
-            height={250}
+            src="/Wachtpost.png"
+            alt="Wachtpost Entrance"
+            width={800}
+            height={400}
             className="rounded-lg shadow-lg object-cover"
           />
-        </div>
-
-        {/* Right Column */}
-        <div className="space-y-8 text-center md:text-left">
-          <div>
-            <div className="flex items-center justify-center md:justify-start gap-2 text-[#2AAA8A] mb-2">
-              <Check className="w-5 h-5" />
-              <h3 className="text-lg font-semibold text-gray-900">
-                Telefoonnummer 1733
-              </h3>
-            </div>
-            <p className="text-gray-700">
-              Bij levensbedreigende situaties: bel eerst <strong>112</strong>.
-            </p>
-          </div>
-
-          <div>
-            <div className="flex items-center justify-center md:justify-start gap-2 text-[#2AAA8A] mb-2">
-              <Check className="w-5 h-5" />
-              <h3 className="text-lg font-semibold text-gray-900">Adres</h3>
-            </div>
-            <p className="text-gray-700">
-              Hendrik Consciencestraat 33, 3000 Leuven
-              <br />
-              (langs <strong>Spoed Heilig Hart Ziekenhuis</strong>).
-            </p>
-          </div>
         </div>
       </div>
     </div>

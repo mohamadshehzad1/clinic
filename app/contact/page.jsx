@@ -8,11 +8,10 @@ const ContactPage = () => {
       {/* 🔹 Header */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Contacteer Ons
+        Contact en Wegwijs
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Hier lees je hoe je contact met ons kunt opnemen als je vragen of
-          opmerkingen hebt.
+        Hier vind je op welke manieren je ons kunt bereiken bij vragen of opmerkingen.
         </p>
       </div>
 
@@ -91,30 +90,36 @@ const ContactPage = () => {
 
       {/* 🔹 Additional Info Section */}
       <div className="max-w-6xl mx-auto mt-12 space-y-4 text-gray-800">
+      <p className="flex items-start gap-2">
+          <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
+          Wij bevinden ons op korte wandelafstand van de{" "}
+          <strong>bushalte Bredene Groenendijk.</strong>
+        </p>
         <p className="flex items-start gap-2">
           <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
-          Wij zijn op wandelafstand gelegen van het station van Leuven.
+          U geraakt hier rechtstreeks met{" "}
+          <strong>buslijn 2</strong>
+          vanuit Oostende Station.
+        </p>
+        <p className="flex items-start gap-2">
+          <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
+          Parkeren met de wagen in de buurt is mogelijk, maar kan tijdens drukke momenten beperkt zijn.
+        </p>
+        <p className="flex items-start gap-2">
+          <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
+          In de omliggende straten vindt u doorgaans vrije parkeerplaatsen.
         </p>
 
         <p className="flex items-start gap-2">
           <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
-          Parkeren met de wagen is soms moeilijk. U kan ook terecht in de
-          ondergrondse parkings onder{" "}
-          <strong>Supercity, Minckelersparking of Parking De Bond</strong> aan
-          het station.
+          De ingang van de praktijk bevindt zich aan{" "}
+          <strong>Groenendijkstraat 12/001</strong> (niet via de zij-
+            of hoekdeur).
         </p>
 
         <p className="flex items-start gap-2">
           <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
-          De ingang van de praktijk is via{" "}
-          <strong>Vanden Tymplestraat 45</strong> (niet de hoekdeur). Onze
-          wachtzaal bevindt zich direct rechts als u binnen komt.
-        </p>
-
-        <p className="flex items-start gap-2">
-          <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
-          Voor mindervalide patiënten of rolstoelgebruikers kunnen wij een
-          oprijramp voorzien. Dit is enkel na afspraak.
+          Onze wachtzaal ligt meteen rechts zodra u binnenkomt.
         </p>
       </div>
     </section>

@@ -20,20 +20,26 @@ const AppointmentPage = () => {
 
         <div className="relative z-10 px-4">
           <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
-            Maak online een afspraak
+          Consultaties gebeuren enkel op afspraak
           </button>
 
           <p className="mt-4 text-sm md:text-base text-gray-100 tracking-wide">
             OF BEL ONS
           </p>
+
+          {/* Phone number with TopBar animation */}
           <p className="text-2xl md:text-3xl font-bold text-white-400 mt-1">
-            {" "}
-            059 45 55 55{" "}
+            <a
+              href="tel:059455555"
+              className="flex justify-center items-center gap-2 opacity-90 hover:opacity-100 transition hover:scale-105 group inline-block"
+            >
+              <span className="group-hover:underline">059 45 55 55</span>
+            </a>
           </p>
         </div>
       </section>
 
-      {/* 🔹 Scrollable Content */}
+      {/* Scrollable Content 1*/}
       <section className="max-w-4xl mx-auto px-6 py-16 text-gray-800 space-y-10 leading-relaxed">
         <div>
           <h2 className="text-xl md:text-2xl font-semibold mb-4">
@@ -41,42 +47,84 @@ const AppointmentPage = () => {
           </h2>
           <ul className="list-disc list-inside space-y-2">
             <li>
-              Gelieve deze afspraak in te boeken via ons online agenda-systeem
-              of telefonisch op het nummer 059455555 (bij voorkeur in de
-              voormiddag).
+            U kunt een afspraak vastleggen via ons online agendasysteem of telefonisch op{" "}
+              <a
+                href="tel:059455555"
+                className="flex items-center gap-2 opacity-90 hover:opacity-100 transition hover:scale-105 group inline-block text-[#2AAA8A] font-semibold"
+              >
+                <span className="group-hover:underline">059 45 55 55</span>
+              </a>{" "}
+              .
+            </li>
+
+            <li>
+            Vermeld bij het inplannen duidelijk de reden van uw bezoek, zodat er voldoende tijd
+            voorzien kan worden.
             </li>
             <li>
-              Gelieve bij het maken van de afspraak steeds zo volledig mogelijk
-              te omschrijven waarvoor u langskomt.
+            Een standaard consult duurt ongeveer 15 minuten.
             </li>
             <li>
-              Hou er rekening mee dat een gemiddelde consultatie ongeveer 15
-              minuten duurt. Indien u meerdere vragen wenst te behandelen, maakt
-              u dus best meerdere afspraken.
+            Komt u met meer dan één patiënt, dan maakt u voor elke persoon afzonderlijk een
+            afspraak.
             </li>
             <li>
-              Voor meerdere patiënten vragen we u ook meerdere afspraken te
-              maken.
+            Betaling met Bancontact is mogelijk.
             </li>
           </ul>
         </div>
-
+        {/* Second Content 2*/}
         <div>
           <h2 className="text-xl md:text-2xl font-semibold mb-4">
-            Huisbezoeken
+          Nieuwe patiënten
           </h2>
           <ul className="list-disc list-inside space-y-2">
-            <li>
-              Huisbezoeken dienen steeds telefonisch te worden aangevraagd{" "}
-              <strong>vóór 10 uur</strong> en zijn enkel bedoeld voor mensen die
-              zich om medische redenen niet kunnen verplaatsen.
+          <li>
+          Nieuwe patiënten melden zich eerst telefonisch aan op{" "}
+              <a
+                href="tel:059455555"
+                className="flex items-center gap-2 opacity-90 hover:opacity-100 transition hover:scale-105 group inline-block text-[#2AAA8A] font-semibold"
+              >
+                <span className="group-hover:underline">059 45 55 55</span>
+              </a>{" "}
+              voor een eerste consultatie.Het is niet mogelijk om zelf rechtstreeks in te plannen via het online
+              agendasysteem.
             </li>
-            <li>
-              Wij houden bij het inplannen van het huisbezoek rekening met de
-              drukte, beschikbaarheid van de artsen en de dringendheid van de
-              hulpvraag. Hierdoor kunnen we niet altijd tegemoetkomen aan uw
-              voorkeur van arts.
-            </li>
+          </ul>
+        </div>
+         {/* Second Content 3*/}
+         <div>
+          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          Huisbezoeken
+          </h2>
+          <ul className="list-disc list-inside space-y-2">
+          <li>
+          Huisbezoeken moeten telefonisch aangevraagd worden vóór <strong>10.00</strong> uur en zijn
+          uitsluitend bedoeld voor patiënten die om medische redenen niet in staat zijn naar de
+          praktijk te komen.
+          </li>
+          <li>
+            Bij het plannen houden we rekening met de werkdruk, de beschikbaarheid van de
+            arts en de urgentie van uw klacht.
+          </li>
+          </ul>
+        </div>
+          {/* Second Content 4*/}
+          <div>
+          <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          Annulatie
+          </h2>
+          <ul className="list-disc list-inside space-y-2">
+          <li>
+          Bent u onverwacht verhinderd voor uw afspraak? Gelieve dan tijdig te annuleren,
+          minstens 4 uur vóór het geplande tijdstip. Zo kunnen we dat moment nog aanbieden
+          aan andere patiënten.
+          </li>
+          <li>
+          Wanneer afspraken herhaaldelijk niet worden nagekomen of te laat worden
+          geannuleerd, kan de praktijk beslissen om uw online boekingsmogelijkheid tijdelijk te
+          blokkeren. In dat geval kan u enkel nog telefonisch een afspraak maken.
+          </li>
           </ul>
         </div>
       </section>
