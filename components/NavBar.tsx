@@ -13,6 +13,7 @@ export default function NavBar() {
     { href: "/team", label: "Team" },
     { href: "/afspraak", label: "Afspraak Maken" },
     { href: "/praktische-info", label: "Praktische Info" },
+    { href: "/dokters-aan-zee", label: "Dokters Aan Zee" },
     { href: "/wachtpost", label: "Wachtpost" },
     { href: "/contact", label: "Contact" },
   ];
