@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link"; // <-- added Link for anchor scrolling
+import Link from "next/link";
 
 export default function PraktischePage() {
   return (
@@ -21,7 +21,6 @@ export default function PraktischePage() {
         </div>
 
         <div className="relative z-10 px-4">
-          {/* Updated button with anchor to Doctors section */}
           <Link href="/#team">
             <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
               Maak online een afspraak
@@ -32,7 +31,6 @@ export default function PraktischePage() {
             OF BEL ONS
           </p>
 
-          {/* Phone number */}
           <p className="text-2xl md:text-3xl font-bold text-white-400 mt-1">
             <a
               href="tel:059455555"
@@ -46,6 +44,7 @@ export default function PraktischePage() {
 
       {/* CONTENT AREA */}
       <section className="max-w-4xl mx-auto px-6 py-16 text-gray-800 space-y-10 leading-relaxed">
+
         {/* GMD */}
         <div>
           <h2 className="text-xl md:text-2xl font-semibold mb-4">GMD</h2>
@@ -95,64 +94,77 @@ export default function PraktischePage() {
 
           <ul className="space-y-3">
             <li>
+              - Arts van wacht:{" "}
               <a
                 href="tel:1733"
                 className="text-[#2AAA8A] font-semibold hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
               >
-                - Arts van wacht: 1733
+                1733
               </a>
             </li>
+
             <li>
+              - Noodnummer:{" "}
               <a
                 href="tel:112"
                 className="text-[#2AAA8A] font-semibold hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
               >
-                - Noodnummer: 112
+                112
               </a>
             </li>
+
             <li>
+              - Tandarts van wacht:{" "}
               <a
                 href="tel:090339969"
                 className="text-[#2AAA8A] font-semibold hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
               >
-                - Tandarts van wacht: 0903 39 969 (1,50 €/min)
+                0903 39 969 (1,50 €/min)
               </a>
             </li>
+
             <li>
+              - Apotheek van wacht:{" "}
               <a
                 href="https://www.apotheek.be"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#2AAA8A] font-semibold hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
               >
-                - Apotheek van wacht: www.apotheek.be
+                www.apotheek.be
               </a>{" "}
-              <span className="text-gray-500">
-                - of 0903 99 000 (24/24u, 1,50 €/min)
-              </span>
+              <span className="text-gray-500">- of 0903 99 000 (24/24u, 1,50 €/min)</span>
             </li>
+
             <li>
+              - Antigifcentrum:{" "}
               <a
                 href="tel:051245245"
                 className="text-[#2AAA8A] font-semibold hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
               >
-                - Antigifcentrum: 051 24 52 45
+                051 24 52 45
               </a>
             </li>
+
             <li>
+              - Zelfmoordlijn:{" "}
               <a
                 href="tel:1813"
                 className="text-[#2AAA8A] font-semibold hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
               >
-                - Zelfmoordlijn: 1813
+                1813
               </a>
             </li>
+
             <li>
+              - Reisvaccinaties:{" "}
               <a
                 href="https://www.wanda.be"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#2AAA8A] font-semibold hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
               >
-                - Reisvaccinaties: www.wanda.be
+                www.wanda.be
               </a>
             </li>
 
@@ -163,18 +175,21 @@ export default function PraktischePage() {
 
               <div className="flex flex-col gap-1 ml-4">
                 {[
-                  "- https://www.mijngezondheid.belgie.be",
-                  "- https://www.cozo.be",
-                  "- https://www.helena.be",
+                  "https://www.mijngezondheid.belgie.be",
+                  "https://www.cozo.be",
+                  "https://www.helena.be",
                 ].map((url) => (
-                  <a
-                    key={url}
-                    href={url}
-                    target="_blank"
-                    className="text-[#2AAA8A] hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
-                  >
-                    {url.replace("https://", "")}
-                  </a>
+                  <div key={url}>
+                    -{" "}
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#2AAA8A] hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
+                    >
+                      {url.replace("https://", "")}
+                    </a>
+                  </div>
                 ))}
               </div>
             </li>
