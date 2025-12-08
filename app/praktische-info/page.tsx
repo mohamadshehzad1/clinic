@@ -119,8 +119,9 @@ export default function PraktischePage() {
                 href="tel:090339969"
                 className="text-[#2AAA8A] font-semibold hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
               >
-                0903 39 969 (1,50 €/min)
-              </a>
+                0903 39 969
+              </a>{" "}
+              (1,50 €/min)
             </li>
 
             <li>
@@ -133,7 +134,14 @@ export default function PraktischePage() {
               >
                 www.apotheek.be
               </a>{" "}
-              <span className="text-gray-500">- of 0903 99 000 (24/24u, 1,50 €/min)</span>
+              - of{" "}
+              <a
+                href="tel:090399000"
+                className="text-[#2AAA8A] font-semibold hover:underline transition hover:scale-105 inline-block opacity-90 hover:opacity-100"
+              >
+                0903 99 000
+              </a>{" "}
+              (24/24u, 1,50 €/min)
             </li>
 
             <li>
