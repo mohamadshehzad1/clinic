@@ -21,15 +21,16 @@ const doctors = [
 
 const Doctors = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="team" className="py-16 bg-gray-50 scroll-mt-24">
       <div className="max-w-6xl mx-auto px-6 text-center">
+
         {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Artsen
         </h2>
         <div className="w-20 h-1 bg-[#2AAA8A] mx-auto mb-6" />
 
-        {/* Section Description */}
+        {/* Description */}
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
           Ons toegewijd team van artsen is geconventioneerd en geaccrediteerd,
           zodat u altijd kunt rekenen op kwaliteitsvolle zorg aan de officiële tarieven.
@@ -57,7 +58,6 @@ const Doctors = () => {
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">{doctor.title}</p>
 
-                {/* Appointment Button */}
                 <Link
                   href={doctor.appointmentUrl}
                   target="_blank"
@@ -71,7 +71,6 @@ const Doctors = () => {
           ))}
         </div>
 
-        {/* "Meer info" button removed */}
       </div>
     </section>
   );

@@ -14,7 +14,7 @@ const Teams = () => {
         {/* Left - Image */}
         <div className="relative w-full md:w-1/2 h-80 md:h-[420px] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/doctor2.webp"
+            src="/doctor1.webp"
             alt="Dr. Volodchenko Galina"
             fill
             className="object-cover"
@@ -33,11 +33,12 @@ const Teams = () => {
 
           <ul className="space-y-3 mb-8">
             {[
-              "Afgestudeerd aan de KU Leuven met specialisatie in huisartsgeneeskunde.",
-              "Heeft bijzondere interesse in preventieve geneeskunde en chronische aandoeningen.",
-              "Richt zich op een holistische aanpak van patiëntenzorg.",
-              "Voert kleine heelkundige ingrepen uit in de praktijk.",
-              "Spreekt Nederlands, Engels en Russisch vloeiend."
+              "Geaccrediteerd erkend en geconventioneerd huisarts sinds 2019.",
+              "Medische ervaring sinds 1990 buiten EU, vanaf 2003 binnen EU.",
+              "In het bezit van sertificaat van EKG, Spirometrie.",
+              "Aangesteld door de UGent ICHO als praktijkopleider voor jonge huisartsen.",
+              "Aangenomen arts bij de politie en defensie.",
+              "Geinteresseerd in de eerstelijns-geneeskunde, preventief geneeskunde, zorg voor de jonge kinderen met ervaring bij Kind en gezin."
             ].map((item, index) => (
               <li key={index} className="flex items-start">
                 <ChevronRight className="text-[#2AAA8A] mt-1 flex-shrink-0" size={18} />
@@ -64,7 +65,7 @@ const Teams = () => {
         {/* Right - Image */}
         <div className="relative w-full md:w-1/2 h-80 md:h-[420px] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/doctor1.webp"
+            src="/doctor2.webp"
             alt="Dr. Amin Adnan"
             fill
             className="object-cover"
@@ -83,11 +84,10 @@ const Teams = () => {
 
           <ul className="space-y-3 mb-8">
             {[
-              "Erkend huisarts met uitgebreide ervaring in algemene en spoedeisende geneeskunde.",
-              "Bijzondere aandacht voor patiëntgerichte zorg en langdurige begeleiding.",
-              "Voert ECG’s en longfunctietesten uit binnen de praktijk.",
-              "Spreekt Nederlands, Engels en Frans.",
-              "Actief betrokken bij nascholingen en medische onderzoekstrajecten."
+              "Geaccrediteerd erkend en geconventioneerd huisarts sinds 2025.",
+              "Sterke focus op individuele zorg, continuïteit en duidelijke communicatie.",
+              "Bekwaam in het uitvoeren en interpreteren van ECG’s en longfunctietesten.",
+              "Regelmatig actief in professionele bijscholing.",
             ].map((item, index) => (
               <li key={index} className="flex items-start">
                 <ChevronRight className="text-[#2AAA8A] mt-1 flex-shrink-0" size={18} />

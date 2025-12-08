@@ -77,17 +77,24 @@ const Footer = () => {
 
         {/* Column 3 */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 border-l-4 border-white pl-2">
-            Openingsuren
-          </h3>
-          <ul className="text-sm space-y-1">
-            <li className="flex justify-between"><span>Ma:</span> <span>8.00 - 18.00</span></li>
-            <li className="flex justify-between"><span>Di:</span> <span>8.00 - 18.00</span></li>
-            <li className="flex justify-between"><span>Wo:</span> <span>8.00 - 18.00</span></li>
-            <li className="flex justify-between"><span>Do:</span> <span>8.00 - 18.00</span></li>
-            <li className="flex justify-between"><span>Vr:</span> <span>8.00 - 18.00</span></li>
-          </ul>
-        </div>
+  <h3 className="text-lg font-semibold mb-4 border-l-4 border-white pl-2">
+    Openingsuren
+  </h3>
+  <ul className="text-sm space-y-1">
+    {[
+      { day: "Ma", time: "8:00 - 18:00" },
+      { day: "Di", time: "8:00 - 18:00" },
+      { day: "Wo", time: "8:00 - 18:00" },
+      { day: "Do", time: "8:00 - 18:00" },
+      { day: "Vr", time: "8:00 - 18:00" },
+    ].map((item) => (
+      <li key={item.day} className="flex gap-30 items-center">
+        <span className="w-12 font-medium">{item.day}:</span>
+        <span>{item.time}</span>
+      </li>
+    ))}
+  </ul>
+</div>
       </div>
 
       {/* Bottom bar */}

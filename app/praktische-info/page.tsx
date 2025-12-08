@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"; // <-- added Link for anchor scrolling
 
 export default function PraktischePage() {
   return (
     <div className="w-full min-h-screen bg-white">
+
       {/* HERO AREA */}
       <section className="relative w-full h-[70vh] flex flex-col justify-center items-center text-center text-white overflow-hidden">
         <div className="absolute inset-0">
@@ -19,15 +21,18 @@ export default function PraktischePage() {
         </div>
 
         <div className="relative z-10 px-4">
-          <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
-            Maak online een afspraak
-          </button>
+          {/* Updated button with anchor to Doctors section */}
+          <Link href="/#team">
+            <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
+              Maak online een afspraak
+            </button>
+          </Link>
 
           <p className="mt-4 text-sm md:text-base text-gray-100 tracking-wide">
             OF BEL ONS
           </p>
 
-          {/* Phone number with TopBar animation */}
+          {/* Phone number */}
           <p className="text-2xl md:text-3xl font-bold text-white-400 mt-1">
             <a
               href="tel:059455555"
@@ -82,7 +87,7 @@ export default function PraktischePage() {
           </ul>
         </div>
 
-        {/* NUTTIGE NUMMERS — Redesigned Section */}
+        {/* Nuttige nummers */}
         <div>
           <h2 className="text-xl md:text-2xl font-semibold mb-4">
             Nuttige telefoonnummers en websites
@@ -152,7 +157,6 @@ export default function PraktischePage() {
             </li>
 
             <li className="space-y-1">
-              {/* FIXED H2 to match Nuttige telefoonnummers style */}
               <h2 className="text-xl md:text-2xl font-semibold mb-4">
                 Uw medische gegevens
               </h2>

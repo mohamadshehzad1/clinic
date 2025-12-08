@@ -6,6 +6,7 @@ import React from "react";
 const TeamHero = () => {
   return (
     <section className="bg-gray-50 py-16 px-6 md:px-12 text-center">
+
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
         Ons Team
@@ -21,7 +22,15 @@ const TeamHero = () => {
         tarieven.
       </p>
 
-      {/* Team Image */}
+      {/* ---------------------------------------------------------
+        TEAM HERO IMAGE (HIDDEN)
+        
+        To re-enable later:
+        1. Uncomment the <Image> block below
+        2. Keep dimensions the same for perfect responsive layout
+      ---------------------------------------------------------- */}
+
+      {/*
       <div className="flex justify-center">
         <div className="relative w-full max-w-5xl h-auto rounded-lg overflow-hidden shadow-md">
           <Image
@@ -34,6 +43,8 @@ const TeamHero = () => {
           />
         </div>
       </div>
+      */}
+
     </section>
   );
 };

@@ -113,8 +113,7 @@ const ContactPage = () => {
         <p className="flex items-start gap-2">
           <ChevronRight className="w-4 h-4 text-[#2AAA8A] mt-1" />
           De ingang van de praktijk bevindt zich aan{" "}
-          <strong>Groenendijkstraat 12/001</strong> (niet via de zij-
-            of hoekdeur).
+          <strong>Groenendijkstraat 12/001</strong>.
         </p>
 
         <p className="flex items-start gap-2">
