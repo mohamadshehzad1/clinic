@@ -25,7 +25,7 @@ const AppointmentPage = () => {
           {/* Updated button with anchor */}
           <Link href="/#team">
             <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
-              Onze dokters werken enkel op afspraak
+            Maak online een afspraak
             </button>
           </Link>
 
