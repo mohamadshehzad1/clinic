@@ -7,41 +7,6 @@ export default function PraktischePage() {
   return (
     <div className="w-full min-h-screen bg-white">
 
-      {/* HERO AREA */}
-      <section className="relative w-full h-[70vh] flex flex-col justify-center items-center text-center text-white overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/afspraak.avif"
-            alt="Clinic Entrance"
-            fill
-            priority
-            className="object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
-        </div>
-
-        <div className="relative z-10 px-4">
-          <Link href="/#team">
-            <button className="bg-[#2AAA8A] hover:bg-[#238f74] text-white font-semibold text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300">
-              Maak online een afspraak
-            </button>
-          </Link>
-
-          <p className="mt-4 text-sm md:text-base text-gray-100 tracking-wide">
-            OF BEL ONS
-          </p>
-
-          <p className="text-2xl md:text-3xl font-bold text-white-400 mt-1">
-            <a
-              href="tel:059455555"
-              className="flex justify-center items-center gap-2 opacity-90 hover:opacity-100 transition hover:scale-105 group inline-block"
-            >
-              <span className="group-hover:underline">059 45 55 55</span>
-            </a>
-          </p>
-        </div>
-      </section>
-
       {/* CONTENT AREA */}
       <section className="max-w-4xl mx-auto px-6 py-16 text-gray-800 space-y-10 leading-relaxed">
 

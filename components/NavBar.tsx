@@ -14,6 +14,7 @@ export default function NavBar() {
     { href: "/afspraak", label: "Afspraak Maken" },
     { href: "/praktische-info", label: "Praktische Info" },
     { href: "/dokters-aan-zee", label: "Dokters Aan Zee" },
+    { href: "/verlof", label: "Verlof" },
     { href: "/wachtpost", label: "Wachtpost" },
     { href: "/contact", label: "Contact" },
   ];

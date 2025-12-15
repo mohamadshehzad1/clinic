@@ -82,13 +82,13 @@ const Footer = () => {
   </h3>
   <ul className="text-sm space-y-1">
     {[
-      { day: "Ma", time: "8:00 - 18:00" },
-      { day: "Di", time: "8:00 - 18:00" },
-      { day: "Wo", time: "8:00 - 18:00" },
-      { day: "Do", time: "8:00 - 18:00" },
-      { day: "Vr", time: "8:00 - 18:00" },
+      { day: "Ma", time: "8:00 - 19:00" },
+      { day: "Di", time: "8:00 - 19:00" },
+      { day: "Wo", time: "8:00 - 19:00" },
+      { day: "Do", time: "8:00 - 19:00" },
+      { day: "Vr", time: "8:00 - 19:00" },
     ].map((item) => (
-      <li key={item.day} className="flex gap-30 items-center">
+      <li key={item.day} className="flex gap-15 items-center">
         <span className="w-12 font-medium">{item.day}:</span>
         <span>{item.time}</span>
       </li>
