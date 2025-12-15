@@ -16,12 +16,33 @@ const Footer = () => {
             </h3>
 
             <p className="text-sm leading-relaxed">
-              Groenendijkstraat 12/01 <br />
-              8450 Bredene
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Groenendijkstraat+12%2F01+8450+Bredene"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Groenendijkstraat 12/01 <br />
+                8450 Bredene
+              </a>
             </p>
 
-            <p className="text-sm">Tel: 059 45 55 55</p>
-            <p className="text-sm">Mail: info@praktijkgroenendijk.be</p>
+            <p className="text-sm">
+              Tel:{" "}
+              <a href="tel:+3259455555" className="hover:underline">
+                059 45 55 55
+              </a>
+            </p>
+
+            <p className="text-sm">
+              Mail:{" "}
+              <a
+                href="mailto:info@praktijkgroenendijk.be"
+                className="hover:underline"
+              >
+                info@praktijkgroenendijk.be
+              </a>
+            </p>
           </div>
 
           {/* Column 2 — CENTER */}
@@ -43,8 +64,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold border-r-4 border-white pr-3">
               Openingsuren
             </h3>
-
-            <p className="text-xs text-white/90"></p>
 
             <ul className="text-sm space-y-1">
               {[
