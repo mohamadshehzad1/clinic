@@ -46,16 +46,16 @@ const Teams = () => {
               </li>
             ))}
           </ul>
-
-          {/* Appointment Button */}
+          {process.env.NEXT_PUBLIC_ENABLE_APPOINTMENT === "true" && (
           <Link
-            href="https://your-appointment-url.com"   // <--- Replace with your actual booking URL
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
+          href="https://your-appointment-url.com"
+          target="_blank"
+           rel="noopener noreferrer"
+          className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
           >
-            Afspraak maken
+          Afspraak maken
           </Link>
+          )} 
         </div>
       </div>
 
@@ -98,7 +98,7 @@ const Teams = () => {
 
           {/* Appointment Button */}
           <Link
-            href="https://your-appointment-url.com"   // <--- Replace with your actual booking URL
+            href="https://onlinebooking.myorganizer.online?guid=OWY5ZDYzNjktODg0ZC00YzY5LWI3YmYtMzRiNWJlNjI1ZWEx&label=MjM2NzA%3D&label=MjM2NzI%3D&label=MjM2NzE%3D&label=MjM2Njk%3D&language=bmxfQkU%3D&role=OA%3D%3D"   // <--- Replace with your actual booking URL
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"

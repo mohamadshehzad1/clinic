@@ -15,7 +15,8 @@ const doctors = [
     name: "Dr. Amin Adnan",
     title: "Huisarts",
     image: "/doctor2.webp",
-    appointmentUrl: "https://your-appointment-url.com",
+    appointmentUrl:
+      "https://onlinebooking.myorganizer.online?guid=OWY5ZDYzNjktODg0ZC00YzY5LWI3YmYtMzRiNWJlNjI1ZWEx&label=MjM2NzA%3D&label=MjM2NzI%3D&label=MjM2NzE%3D&label=MjM2Njk%3D&language=bmxfQkU%3D&role=OA%3D%3D",
   },
 ];
 
@@ -56,16 +57,29 @@ const Doctors = () => {
                 <h3 className="text-xl font-semibold text-gray-800 mb-1">
                   {doctor.name}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">{doctor.title}</p>
+                <p className="text-gray-600 text-sm mb-4">
+                  {doctor.title}
+                </p>
 
-                <Link
-                  href={doctor.appointmentUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#2AAA8A] text-white px-5 py-2 rounded-full font-medium hover:bg-[#238f74] transition-all inline-block"
-                >
-                  Afspraak maken
-                </Link>
+                {/* Appointment Button */}
+                {doctor.name !== "Dr. Volodchenko Galina" && (
+                  <Link
+                    href={doctor.appointmentUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#2AAA8A] text-white px-5 py-2 rounded-full font-medium hover:bg-[#238f74] transition-all inline-block"
+                  >
+                    Afspraak maken
+                  </Link>
+                )}
+
+                {/*
+                  To ENABLE the appointment button for Dr. Volodchenko Galina later:
+                  - Remove this condition:
+                      doctor.name !== "Dr. Volodchenko Galina"
+                  OR
+                  - Replace it with a flag, e.g. doctor.canBook === true
+                */}
               </div>
             </div>
           ))}
