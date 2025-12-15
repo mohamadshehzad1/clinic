@@ -21,8 +21,10 @@ export default function NoticePopup() {
 
     document.body.style.overflow = "hidden";
 
-    const handleEsc = (e) => {
-      if (e.key === "Escape") close();
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        close();
+      }
     };
 
     window.addEventListener("keydown", handleEsc);
@@ -42,7 +44,6 @@ export default function NoticePopup() {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
-
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-md"
@@ -51,7 +52,6 @@ export default function NoticePopup() {
 
       {/* Popup Card */}
       <div className="relative w-[92%] max-w-lg rounded-2xl bg-white shadow-2xl border border-gray-100 animate-popup">
-
         {/* Header */}
         <div className="flex items-center gap-3 px-6 py-5 border-b border-gray-100">
           <div
@@ -90,16 +90,18 @@ export default function NoticePopup() {
               strokeWidth="2"
               viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
 
         {/* Body */}
         <div className="px-6 py-6 text-gray-700 leading-relaxed">
-          <p className="font-medium text-gray-900 mb-3">
-            Nieuwe patiënten
-          </p>
+          <p className="font-medium text-gray-900 mb-3">Nieuwe patiënten</p>
 
           <p className="text-sm text-gray-600">
             Nieuwe patiënten melden zich eerst <strong>telefonisch</strong> aan via{" "}
@@ -111,7 +113,8 @@ export default function NoticePopup() {
               059 45 55 55
             </a>{" "}
             voor een eerste consultatie.
-            <br /><br />
+            <br />
+            <br />
             Het is <strong>niet mogelijk</strong> om zelf rechtstreeks een afspraak
             in te plannen via het online agendasysteem.
           </p>
@@ -133,8 +136,12 @@ export default function NoticePopup() {
             onClick={close}
             className="px-6 py-2.5 text-white rounded-lg font-medium shadow transition"
             style={{ backgroundColor: "#2AAA8A" }}
-            onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#239973")}
-            onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#2AAA8A")}
+            onMouseOver={(e) =>
+              (e.currentTarget.style.backgroundColor = "#239973")
+            }
+            onMouseOut={(e) =>
+              (e.currentTarget.style.backgroundColor = "#2AAA8A")
+            }
           >
             Begrepen
           </button>
