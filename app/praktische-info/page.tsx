@@ -5,10 +5,20 @@ import Link from "next/link";
 
 export default function PraktischePage() {
   return (
-    <div className="w-full min-h-screen bg-white">
+    <div className="w-full min-h-screen bg-gray-50">
+
+      {/* Heading */}
+      <section className="pt-16 px-6 md:px-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 text-center">
+          <span className="font-extrabold">Praktische info</span>
+        </h1>
+
+        {/* Divider */}
+        <div className="w-24 h-[2px] bg-[#2AAA8A] mx-auto mb-10" />
+      </section>
 
       {/* CONTENT AREA */}
-      <section className="max-w-4xl mx-auto px-6 py-16 text-gray-800 space-y-10 leading-relaxed">
+      <section className="max-w-4xl mx-auto px-6 pb-16 text-gray-800 space-y-10 leading-relaxed">
 
         {/* GMD */}
         <div>
