@@ -9,7 +9,7 @@ const doctors = [
     name: "Dr. Volodchenko Galina",
     title: "Huisarts",
     image: "/doctor1.webp",
-    appointmentUrl: "https://your-appointment-url.com",
+    appointmentUrl: "https://onlinebooking.myorganizer.online/?guid=NDE0NzA2ZmYtNGQ1OC00MTNiLWI4NjItYzQxMWU5ZGExYzJj&language=bmxfQkU%3D&role=OA%3D%3D",
   },
   {
     name: "Dr. Amin Adnan",
@@ -61,25 +61,15 @@ const Doctors = () => {
                   {doctor.title}
                 </p>
 
-                {/* Appointment Button */}
-                {doctor.name !== "Dr. Volodchenko Galina" && (
-                  <Link
-                    href={doctor.appointmentUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#2AAA8A] text-white px-5 py-2 rounded-full font-medium hover:bg-[#238f74] transition-all inline-block"
-                  >
-                    Afspraak maken
-                  </Link>
-                )}
-
-                {/*
-                  To ENABLE the appointment button for Dr. Volodchenko Galina later:
-                  - Remove this condition:
-                      doctor.name !== "Dr. Volodchenko Galina"
-                  OR
-                  - Replace it with a flag, e.g. doctor.canBook === true
-                */}
+                {/* Appointment Button (Enabled for all doctors) */}
+                <Link
+                  href={doctor.appointmentUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#2AAA8A] text-white px-5 py-2 rounded-full font-medium hover:bg-[#238f74] transition-all inline-block"
+                >
+                  Afspraak maken
+                </Link>
               </div>
             </div>
           ))}

@@ -46,16 +46,16 @@ const Teams = () => {
               </li>
             ))}
           </ul>
-          {process.env.NEXT_PUBLIC_ENABLE_APPOINTMENT === "true" && (
+           
           <Link
-          href="https://your-appointment-url.com"
+          href="https://onlinebooking.myorganizer.online/?guid=NDE0NzA2ZmYtNGQ1OC00MTNiLWI4NjItYzQxMWU5ZGExYzJj&language=bmxfQkU%3D&role=OA%3D%3D"
           target="_blank"
            rel="noopener noreferrer"
           className="inline-block bg-[#2AAA8A] hover:bg-[#238f74] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300"
           >
           Afspraak maken
           </Link>
-          )} 
+           
         </div>
       </div>
 
