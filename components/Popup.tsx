@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 export default function NoticePopup() {
   const [open, setOpen] = useState(false);
 
+  // Show popup once per user
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -15,16 +16,14 @@ export default function NoticePopup() {
     }
   }, []);
 
-  // Lock body scroll + ESC key support
+  // Lock scroll + ESC support
   useEffect(() => {
     if (!open) return;
 
     document.body.style.overflow = "hidden";
 
     const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        close();
-      }
+      if (e.key === "Escape") close();
     };
 
     window.addEventListener("keydown", handleEsc);
@@ -50,7 +49,7 @@ export default function NoticePopup() {
         onClick={close}
       />
 
-      {/* Popup Card */}
+      {/* Popup */}
       <div className="relative w-[92%] max-w-lg rounded-2xl bg-white shadow-2xl border border-gray-100 animate-popup">
         {/* Header */}
         <div className="flex items-center gap-3 px-6 py-5 border-b border-gray-100">
@@ -101,10 +100,12 @@ export default function NoticePopup() {
 
         {/* Body */}
         <div className="px-6 py-6 text-gray-700 leading-relaxed">
-          <p className="font-medium text-gray-900 mb-3">Nieuwe patiënten</p>
+          <p className="font-medium text-gray-900 mb-3">
+            Nieuwe patiënten
+          </p>
 
           <p className="text-sm text-gray-600">
-            Nieuwe patiënten melden zich eerst <strong>telefonisch</strong> aan via{" "}
+            Nieuwe patiënten melden zich eerst telefonisch aan via{" "}
             <a
               href="tel:059455555"
               className="font-semibold underline"
@@ -115,18 +116,21 @@ export default function NoticePopup() {
             voor een eerste consultatie.
             <br />
             <br />
-            Het is <strong>niet mogelijk</strong> om zelf rechtstreeks een afspraak
-            in te plannen via het online agendasysteem.
+            Indien u patiënt was bij{" "}
+            <strong>Dr. Maes Wilfried</strong> of{" "}
+            <strong>Dr. Osstyn Johan</strong>, kunt u wel een online afspraak maken bij{" "}
+            <strong>Dr. Amin Adnan</strong>.
           </p>
 
           <span
-            className="inline-block mt-5 text-xs px-3 py-1 rounded-full"
+            className="inline-block mt-5 text-xs px-3 py-1 rounded-full font-medium"
             style={{
               backgroundColor: "#2AAA8A20",
               color: "#2AAA8A",
             }}
           >
-            Actuele informatie
+            Gelieve geen online afspraak te maken indien Dr. Amin of Dr. Volodchenko
+            niet uw vaste huisarts is.
           </span>
         </div>
 
