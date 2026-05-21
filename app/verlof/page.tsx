@@ -22,8 +22,8 @@ const VerlofPage = () => {
             Dr. Amin Adnan
           </h2>
           <p className="text-gray-700">
-            Afwezig van <span className="font-medium text-gray-900">26/05</span> tot{" "}
-            <span className="font-medium text-gray-900">27/05</span>.
+            Afwezig van <span className="font-medium text-gray-900">27/05</span> tot{" "}
+            <span className="font-medium text-gray-900">28/05</span>.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ const VerlofPage = () => {
               <span className="font-medium text-gray-900">15/05</span>.
             </p>
             <p className="text-gray-700 border-t border-gray-100 pt-2">
-              Afwezig van <span className="font-medium text-gray-900">14/09</span> tot{" "}
+              Afwezig van <span className="font-medium text-gray-900">11/09</span> tot{" "}
               <span className="font-medium text-gray-900">25/09</span>.
             </p>
           </div>
