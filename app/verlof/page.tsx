@@ -21,10 +21,19 @@ const VerlofPage = () => {
           <h2 className="text-xl font-semibold text-gray-900 mb-2">
             Dr. Amin Adnan
           </h2>
-          <p className="text-gray-700">
-            Afwezig van <span className="font-medium text-gray-900">27/05</span> tot{" "}
-            <span className="font-medium text-gray-900">28/05</span>.
-          </p>
+          <div className="space-y-2">
+            <p className="text-gray-700">
+              Afwezig van <span className="font-medium text-gray-900">27/05</span> tot{" "}
+              <span className="font-medium text-gray-900">28/05</span>.
+            </p>
+            <p className="text-gray-700 border-t border-gray-100 pt-2">
+              Afwezig op <span className="font-medium text-gray-900">20/08</span>.
+            </p>
+            <p className="text-gray-700 border-t border-gray-100 pt-2">
+              Afwezig van <span className="font-medium text-gray-900">31/08</span> tot{" "}
+              <span className="font-medium text-gray-900">11/09</span>.
+            </p>
+          </div>
         </div>
 
         {/* Doctor 2 */}
